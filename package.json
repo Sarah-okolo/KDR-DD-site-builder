@@ -12,13 +12,23 @@
   "dependencies": {
     "@progress/kendo-react-buttons": "^12.1.0",
     "@progress/kendo-react-common": "^12.1.0",
+    "@progress/kendo-react-dateinputs": "^12.1.0",
+    "@progress/kendo-react-dropdowns": "^12.1.0",
+    "@progress/kendo-react-inputs": "^12.1.0",
+    "@progress/kendo-react-layout": "^12.1.0",
+    "@progress/kendo-react-notification": "^12.1.0",
+    "@progress/kendo-react-popup": "^12.1.0",
+    "@progress/kendo-react-tooltip": "^12.1.0",
     "@progress/kendo-svg-icons": "^4.5.0",
     "@progress/kendo-theme-default": "^12.0.1",
     "@tailwindcss/vite": "^4.1.13",
     "react": "^19.1.1",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.2",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

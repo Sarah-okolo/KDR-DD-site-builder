@@ -52,19 +52,19 @@
 
   --background-image-gradient-primary: linear-gradient(
     225deg,
-    #b2f5ea 0%,
-    #33c3f0 48%,
-    #0ea5e9 100%
+    hsl(41, 100%, 35%) 0%,
+   hsl(41, 98%, 79%) 48%,
+    hsl(41, 100%, 35%) 100%
   );
   --background-image-gradient-secondary: linear-gradient(
     90deg,
-    hsl(195 83% 58%) 0%,
-    hsl(185 92% 79%) 100%
+    hsl(41, 98%, 79%) 0%,
+    hsl(41, 100%, 35%) 100%
   );
   --background-image-gradient-tertiary: linear-gradient(
     90deg,
-    hsl(200 75% 84%) 0%,
-    hsl(187 50% 51%) 100%
+    hsl(41, 98%, 79%) 0%,
+    hsl(41, 100%, 35%) 100%
   );
 }
 
@@ -78,10 +78,10 @@
   --popover: hsl(0 0% 100%);
   --popover-foreground: hsl(280 5% 13%);
 
-  --primary: hsl(180 100% 35%);
+  --primary: hsl(41, 100%, 35%);
   --primary-foreground: hsl(0 0% 100%);
 
-  --secondary: hsl(190 100% 80%);
+  --secondary: hsl(41, 98%, 79%);
   --secondary-foreground: hsl(280 5% 13%);
 
   --muted: hsl(280 5% 96%);
@@ -95,7 +95,7 @@
 
   --border: hsl(280 5% 90%);
   --input: hsl(280 5% 90%);
-  --ring: hsl(180 100% 35%);
+  --ring: hsl(41, 100%, 35%);
 
   --radius: 1rem;
 
