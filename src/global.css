@@ -53,7 +53,7 @@
   --background-image-gradient-primary: linear-gradient(
     225deg,
     hsl(41, 100%, 35%) 0%,
-   hsl(41, 98%, 79%) 48%,
+    hsl(41, 98%, 79%) 48%,
     hsl(41, 100%, 35%) 100%
   );
   --background-image-gradient-secondary: linear-gradient(
@@ -112,14 +112,43 @@
 * {
   @apply border-border;
 }
-
 body {
   @apply bg-background text-foreground antialiased;
   font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
 }
-
 html {
   @apply scroll-smooth;
+}
+/* src/global.css - Add/replace this block (no duplicate braces) */
+.custom-scrollbar {
+  /* Firefox fallback */
+  scrollbar-width: thin;
+  scrollbar-color: hsl(41 100% 35%) transparent; /* uses primary hue as fallback */
+}
+
+/* Webkit browsers (Chrome, Edge, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  /* use your gradient variable directly */
+  background-image: var(--background-image-gradient-primary);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* optional visual padding / separation */
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Optional: different gradient on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-image: var(--background-image-gradient-secondary);
 }
 
 @layer utilities {

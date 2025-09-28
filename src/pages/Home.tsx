@@ -1,10 +1,8 @@
 import React from "react";
-import { Anchor, BarChart2, Lightbulb } from "lucide-react";
+import { Anchor, BarChart2, Brush, Lightbulb } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Button } from "@progress/kendo-react-buttons";
 import { Link } from "react-router-dom";
-import { anchorIcon } from "@progress/kendo-svg-icons";
 
 const Home: React.FC = () => {
   return (
@@ -25,13 +23,12 @@ const Home: React.FC = () => {
               SEO performance.
             </p>
             <div className="flex flex-wrap justify-center gap-4 my-20">
-              <Link to="/build-site">
-                <Button
-                  className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-primary cursor-pointer text-white font-extrabold hover:bg-gradient-secondary hover:scale-105 transition-all"
-                  svgIcon={anchorIcon}
-                >
-                  Blank Canvas
-                </Button>
+              <Link
+                to="/build-site"
+                className="flex flex-row justify-center gap-2 items-center px-6 py-3 rounded-lg bg-gradient-primary cursor-pointer text-white font-extrabold hover:bg-gradient-secondary hover:scale-105 transition-all"
+              >
+                <p>Blank Canvas</p>
+                <Brush className="size-4"/>
               </Link>
             </div>
           </div>
