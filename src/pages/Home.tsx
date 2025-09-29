@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, BarChart2, Brush, Lightbulb } from "lucide-react";
+import { Brush, LayoutDashboard, MonitorSmartphone, Move } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -19,8 +19,8 @@ const Home: React.FC = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Your complete toolbox for analyzing, and improving your website's
-              SEO performance.
+              Design and build stunning responsive websites effortlessly. Drag,
+              drop, and customize components — no code required.
             </p>
             <div className="flex flex-wrap justify-center gap-4 my-20">
               <Link
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
                 className="flex flex-row justify-center gap-2 items-center px-6 py-3 rounded-lg bg-gradient-primary cursor-pointer text-white font-extrabold hover:bg-gradient-secondary hover:scale-105 transition-all"
               >
                 <p>Blank Canvas</p>
-                <Brush className="size-4"/>
+                <Brush className="size-4" />
               </Link>
             </div>
           </div>
@@ -39,34 +39,36 @@ const Home: React.FC = () => {
           >
             <div className="neo-blur rounded-xl p-6 text-center">
               <div className="bg-primary/10 w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
-                <Anchor className="h-8 w-8 text-primary" />
+                <LayoutDashboard className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Analyze</h3>
+              <h3 className="text-xl font-semibold mb-2">Start Designing</h3>
               <p className="text-muted-foreground">
-                Get a comprehensive analysis of your website's SEO health with
-                our powerful analyzer.
+                Choose from ready-made components or start with a blank canvas
+                to bring your ideas to life instantly.
               </p>
             </div>
 
             <div className="neo-blur rounded-xl p-6 text-center">
               <div className="bg-primary/10 w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
-                <BarChart2 className="h-8 w-8 text-primary" />
+                <Move className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Track Metrics</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                Customize & Arrange
+              </h3>
               <p className="text-muted-foreground">
-                Monitor key SEO metrics to understand your website's performance
-                and identify areas for improvement.
+                Drag and drop elements, adjust layouts, and fine-tune styles to
+                create fully responsive designs your way.
               </p>
             </div>
 
             <div className="neo-blur rounded-xl p-6 text-center">
               <div className="bg-primary/10 w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
-                <Lightbulb className="h-8 w-8 text-primary" />
+                <MonitorSmartphone className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Optimize</h3>
+              <h3 className="text-xl font-semibold mb-2">Preview & Export</h3>
               <p className="text-muted-foreground">
-                Get actionable tips and recommendations to improve your
-                website's search engine ranking.
+                See your site in action across device sizes and export the code
+                when you're ready to go live.
               </p>
             </div>
           </div>

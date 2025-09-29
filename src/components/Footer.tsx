@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import { FloatingActionButton } from '@progress/kendo-react-buttons';
 // import {
 //   clipboardIcon,
@@ -21,12 +21,12 @@ import React from 'react';
 // } from '@progress/kendo-svg-icons';
 
 const Footer: React.FC = () => {
-//   const scrollToTop = () => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth',
-//     });
-//   };
+  //   const scrollToTop = () => {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: 'smooth',
+  //     });
+  //   };
 
   return (
     <footer className="neo-blur border-t border-border/50 py-12 px-6 mt-28">
@@ -40,36 +40,45 @@ const Footer: React.FC = () => {
               </h3>
             </div>
             <p className="text-muted-foreground max-w-md mb-4">
-              SEO analysis and optimization tool to improve your website's visibility and ranking in search engines.
+              An intuitive drag-and-drop platform for creating responsive
+              websites with zero coding required
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-medium mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#analyzer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  SEO Analyzer
+                <a
+                  href="/build-site"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Start Designing
                 </a>
               </li>
               <li>
-                <a href="#metrics" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  SEO Metrics
+                <a
+                  href="/build-site"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Components Library
                 </a>
               </li>
               <li>
-                <a href="#tips" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Optimization Tips
+                <a
+                  href="/build-site"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Preview & Publish
                 </a>
               </li>
             </ul>
           </div>
-          
         </div>
-        
+
         <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-border/30">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Rank Pro. All rights reserved.
+            &copy; {new Date().getFullYear()} Build It. All rights reserved.
           </p>
           {/* <FloatingActionButton 
             svgIcon={arrowUpIcon} 
